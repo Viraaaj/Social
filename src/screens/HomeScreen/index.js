@@ -1,12 +1,10 @@
 import React from 'react';
-import {Text, View} from 'react-native';
-import StoriesContainer from '../../components/StoriesContainer';
-import Post from '../../components/Post';
+import {View} from 'react-native';
+import Feed from '../../components/Feed';
 
 const HomeScreen = () => (
   <View>
-    <StoriesContainer />
-    <Post />
+    <Feed />
   </View>
 );
 

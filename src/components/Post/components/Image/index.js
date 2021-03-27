@@ -1,12 +1,18 @@
 import React from 'react';
-import { Text } from 'react-native';
+import {Dimensions, View} from 'react-native';
+import {Image} from 'react-native';
 
-const Image = () => (
-
-    <Text>
-        Image
-    </Text>
-
-)
-
-export default Image;
+const Body = ({imageUri}) => (
+  <View>
+    <Image
+      resizeMode="cover"
+      source={{uri: imageUri}}
+      style={{
+        width: Dimensions.get('window').width,
+        height: Dimensions.get('window').width,
+        alignSelf: 'center',
+      }}
+    />
+  </View>
+);
+export default Body;
