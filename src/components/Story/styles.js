@@ -3,8 +3,8 @@ import {StyleSheet} from 'react-native';
 const styles = StyleSheet.create({
   mainView: {
     backgroundColor: '#121212',
-    paddingTop: 2,
-    paddingBottom: 5,
+    paddingTop: 5,
+    paddingBottom: 10,
     borderColor: '#424242',
     borderBottomWidth: 1,
     paddingLeft: 3,
