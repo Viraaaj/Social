@@ -108,6 +108,7 @@ const Feed = () => (
     <FlatList
       showsVerticalScrollIndicator={false}
       data={data}
+      keyExtractor={({id}) => id}
       renderItem={({item}) => <Post post={item} />}
       ListHeaderComponent={StoriesContainer}
     />

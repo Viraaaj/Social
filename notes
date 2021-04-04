@@ -1,0 +1,1 @@
+1. for iOS: if screen is taking entire screen then use <SafeAreaView> to avoid screen using notifications bar.
