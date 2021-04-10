@@ -37,10 +37,10 @@ const Router = () => {
 
           if (route.name === 'Reels') {
             return focused ? (
-              <ReelsIcon name="play-box-multiple" size={size} color="#ffffff" />
+              <ReelsIcon name="tooltip-plus" size={size} color="#ffffff" />
             ) : (
               <ReelsIcon
-                name="play-box-multiple-outline"
+                name="tooltip-plus-outline"
                 size={size}
                 color="#ffffff"
               />
