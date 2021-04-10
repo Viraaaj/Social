@@ -1,6 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import {Text, TouchableNativeFeedback, View} from 'react-native';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import HeartIcon from 'react-native-vector-icons/AntDesign';
+import CommentIcon from 'react-native-vector-icons/FontAwesome';
+import SendIcon from 'react-native-vector-icons/Feather';
+import BookmarkIcon from 'react-native-vector-icons/FontAwesome';
 
 const Footer = ({caption, likesCount: likesCountNumber, createdAt}) => {
   const [like, setLike] = useState(false);
@@ -28,15 +31,15 @@ const Footer = ({caption, likesCount: likesCountNumber, createdAt}) => {
       <View style={{flexDirection: 'row', marginTop: 8, marginBottom: 10}}>
         <TouchableNativeFeedback onPress={likePressHandler}>
           {like ? (
-            <Icon
-              name="heart-multiple"
+            <HeartIcon
+              name="heart"
               size={27}
               color="red"
               style={{alignSelf: 'center', marginLeft: 3}}
             />
           ) : (
-            <Icon
-              name="heart-multiple-outline"
+            <HeartIcon
+              name="hearto"
               size={27}
               color="#ffffff"
               style={{alignSelf: 'center', marginLeft: 3}}
@@ -44,20 +47,20 @@ const Footer = ({caption, likesCount: likesCountNumber, createdAt}) => {
           )}
         </TouchableNativeFeedback>
 
-        <Icon
-          name="comment-multiple-outline"
+        <CommentIcon
+          name="comment-o"
           size={25}
           color="#ffffff"
-          style={{alignSelf: 'center', marginLeft: 18}}
+          style={{alignSelf: 'center', marginLeft: 15, marginTop: -4}}
         />
-        <Icon
-          name="share-all-outline"
+        <SendIcon
+          name="send"
           size={25}
           color="#ffffff"
-          style={{alignSelf: 'center', marginLeft: 18}}
+          style={{alignSelf: 'center', marginLeft: 15}}
         />
-        <Icon
-          name="bookmark-multiple-outline"
+        <BookmarkIcon
+          name="bookmark-o"
           size={25}
           color="#ffffff"
           style={{alignSelf: 'center', position: 'absolute', right: 0}}

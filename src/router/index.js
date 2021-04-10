@@ -3,7 +3,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import HomeIcon from 'react-native-vector-icons/Ionicons';
 import DiscoverIcon from 'react-native-vector-icons/Ionicons';
 import ReelsIcon from 'react-native-vector-icons/MaterialCommunityIcons';
-import NotificationsIcon from 'react-native-vector-icons/MaterialCommunityIcons';
+import NotificationsIcon from 'react-native-vector-icons/AntDesign';
 import ProfileIcon from 'react-native-vector-icons/Ionicons';
 import NotificationsScreen from '../screens/NotificationsScreen';
 import ReelsScreen from '../screens/NotificationsScreen/ReelsScreen';
@@ -49,17 +49,9 @@ const Router = () => {
 
           if (route.name === 'Notifications') {
             return focused ? (
-              <NotificationsIcon
-                name="heart-multiple"
-                size={size}
-                color="#ffffff"
-              />
+              <NotificationsIcon name="heart" size={size} color="#ffffff" />
             ) : (
-              <NotificationsIcon
-                name="heart-multiple-outline"
-                size={size}
-                color="#ffffff"
-              />
+              <NotificationsIcon name="hearto" size={size} color="#ffffff" />
             );
           }
 
