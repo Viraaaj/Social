@@ -7,7 +7,7 @@ const StoriesContainer = () => (
   <View>
     <FlatList
       data={storiesData}
-      keyExtractor={({name}) => name}
+      keyExtractor={({id}) => id}
       horizontal={true}
       showsHorizontalScrollIndicator={false}
       renderItem={({item}) => <Story storyObject={item} />}
